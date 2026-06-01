@@ -5660,6 +5660,7 @@ describe('Validators', () => {
         'en',
         'gsw',
         'en-US',
+        'fr-CA',
         'es_ES',
         'es-419',
         'sw_KE',
@@ -5704,6 +5705,8 @@ describe('Validators', () => {
         '12_DD',
         'de-419-DE',
         'a-DE',
+        'french',
+        'frenchy',
       ],
     });
   });
