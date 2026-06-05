@@ -13,7 +13,8 @@ const extlang = '([A-Za-z]{3}(-[A-Za-z]{3}){0,2})';
   / 4ALPHA              ; or reserved for future use
   / 5*8ALPHA            ; or registered language subtag
  */
-const language = `(([a-zA-Z]{2,3}(-${extlang})?)|([a-zA-Z]{5,8}))`;
+// Bare 5-8 alpha strings are not accepted as locales; require a following subtag.
+const language = `(([a-zA-Z]{2,3}(-${extlang})?)|([a-zA-Z]{5,8}(?=(-|_))))`;
 
 /*
   = 4ALPHA              ; ISO 15924 code
